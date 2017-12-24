@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bluefire</title>
+</head>
+
+<body>
+    <script>
+        window.addEventListener('mousemove', e => {
+            fetch(`http://localhost:5000/analytics?x=${e.clientX}&y=${e.clientY}`)
+        })
+    </script>
+</body>
+
+</html>
